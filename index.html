@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Return or Exchange Request — Paragon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Ubuntu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; background:#efebe4; font-family:'Ubuntu','Helvetica Neue',Helvetica,Arial,sans-serif; color:#1d1d1b; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:30px 10px; }
+  .card { background:#fff; padding:0; }
+  .header { text-align:center; padding:34px 24px 18px; }
+  .logo { text-decoration:none; color:#1d1d1b; font-family:'Poppins',sans-serif; font-size:26px; font-weight:700; letter-spacing:8px; }
+  .rule { border-top:1px solid #1d1d1b; margin:0 24px; height:0; }
+  .nav { text-align:center; padding:14px 24px 10px; }
+  .nav a { text-decoration:none; color:#1d1d1b; font-family:'Poppins',sans-serif; font-size:11px; font-weight:500; letter-spacing:2px; padding:0 10px; }
+  .badge { text-align:center; padding:40px 24px 8px; font-family:'Poppins',sans-serif; font-size:10px; font-weight:600; letter-spacing:3px; color:#8e8e93; text-transform:uppercase; }
+  h1 { margin:8px 24px; text-align:center; font-family:Ubuntu,sans-serif; font-size:32px; font-weight:700; letter-spacing:-0.5px; line-height:1.15; color:#1d1d1b; }
+  .subhead { text-align:center; padding:0 24px 30px; font-size:15px; line-height:1.5; color:#4a4a4a; }
+  .notice { margin:0 32px 24px; padding:14px 16px; background:#efebe4; border-left:3px solid #1d1d1b; font-size:13px; line-height:1.6; color:#1d1d1b; }
+  .form { padding:0 32px 40px; }
+  fieldset { border:0; margin:0 0 28px; padding:0; }
+  legend { display:block; width:100%; font-family:'Poppins',sans-serif; font-size:10px; font-weight:600; letter-spacing:2.5px; color:#8e8e93; text-transform:uppercase; padding-bottom:12px; border-bottom:2px solid #1d1d1b; margin-bottom:18px; }
+  label { display:block; font-size:13px; font-weight:600; margin:14px 0 6px; }
+  .req { color:#c83232; }
+  input[type=text], input[type=email], input[type=tel], select, textarea {
+    width:100%; padding:12px 14px; font-family:inherit; font-size:14px; color:#1d1d1b;
+    background:#fafaf7; border:1px solid #d8d3c8; border-radius:2px; outline:none;
+  }
+  input:focus, select:focus, textarea:focus { border-color:#1d1d1b; background:#fff; }
+  textarea { min-height:100px; resize:vertical; }
+  .hint { font-size:12px; color:#8e8e93; margin:4px 0 0; }
+  .radio-group, .check-group { display:flex; flex-direction:column; gap:10px; margin-top:6px; }
+  .radio-tile { display:flex; align-items:flex-start; gap:12px; padding:14px 16px; border:1px solid #d8d3c8; border-radius:2px; background:#fafaf7; cursor:pointer; transition:border-color .15s, background .15s; }
+  .radio-tile:hover { border-color:#1d1d1b; }
+  .radio-tile input { margin-top:2px; }
+  .radio-tile input:checked ~ .rt-text { color:#1d1d1b; }
+  .radio-tile:has(input:checked) { border-color:#1d1d1b; background:#fff; }
+  .rt-text { flex:1; font-size:14px; }
+  .rt-text strong { display:block; font-weight:600; margin-bottom:2px; }
+  .rt-text span { display:block; font-size:12px; color:#8e8e93; }
+  .attest { display:flex; align-items:flex-start; gap:10px; padding:16px; background:#fafaf7; border:1px solid #d8d3c8; margin-top:14px; }
+  .attest input { margin-top:3px; flex-shrink:0; }
+  .attest label { margin:0; font-weight:500; font-size:13px; line-height:1.5; }
+  .cta { display:block; width:100%; padding:18px 24px; margin-top:12px; background:#1d1d1b; color:#fff;
+    font-family:'Poppins',sans-serif; font-size:13px; font-weight:600; letter-spacing:2.5px;
+    text-transform:uppercase; border:0; border-radius:2px; cursor:pointer; transition:opacity .15s; }
+  .cta:hover { opacity:0.85; }
+  .policy { margin:20px 32px 0; padding:16px; background:#fafaf7; border:1px solid #e5e0d3; font-size:12px; line-height:1.7; color:#4a4a4a; }
+  .policy strong { color:#1d1d1b; }
+  .footer { text-align:center; padding:20px 24px 30px; font-size:12px; line-height:1.7; color:#8e8e93; }
+  .footer a { color:#4a4a4a; text-decoration:underline; }
+  .hide { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+  <div class="header"><a href="https://paragonleggins.com" class="logo">PARAGON</a></div>
+  <div class="rule"></div>
+  <div class="nav">
+    <a href="https://paragonleggins.com/collections/sculptseam">SCULPTSEAM®</a>
+    <a href="https://paragonleggins.com/collections/core">CORE</a>
+    <a href="https://paragonleggins.com/collections/all">SHOP ALL</a>
+  </div>
+  <div class="badge">Return or exchange · Request review</div>
+  <h1>Let's make this right.</h1>
+  <p class="subhead">Fill this out and our team will review your request within <strong>24–48 business hours</strong>.</p>
+
+  <div class="notice">
+    <strong>Heads up:</strong> submitting this form does not automatically approve your request. All returns and exchanges are reviewed against our policy (30 days from delivery, unworn, tags attached). You'll receive an approval decision by email.
+  </div>
+
+  <form class="form" id="returnForm" action="https://formsubmit.co/paragonleggings@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
+    <input type="hidden" name="_subject" value="[Paragon] New return/exchange request">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://paragonleggins.com/thank-you-returns">
+
+    <fieldset>
+      <legend>1 · Your order</legend>
+      <label>Order number <span class="req">*</span></label>
+      <input type="text" name="Order number" required placeholder="e.g. #1042" pattern="^#?\d{3,6}$">
+      <p class="hint">Find it in your Paragon order confirmation email. Format looks like #1042.</p>
+
+      <label>Email used at checkout <span class="req">*</span></label>
+      <input type="email" name="Customer email" required placeholder="you@email.com">
+
+      <label>Full name <span class="req">*</span></label>
+      <input type="text" name="Full name" required placeholder="First and last name">
+    </fieldset>
+
+    <fieldset>
+      <legend>2 · What would you like to do?</legend>
+      <div class="radio-group">
+        <label class="radio-tile">
+          <input type="radio" name="Request type" value="Return (refund to store credit or original payment)" required onchange="toggleReturnExchange()">
+          <span class="rt-text"><strong>Return</strong><span>Send the item back for a refund. Store credit issued instantly; original-payment refund within 5–10 business days of receipt.</span></span>
+        </label>
+        <label class="radio-tile">
+          <input type="radio" name="Request type" value="Exchange (different size)" onchange="toggleReturnExchange()">
+          <span class="rt-text"><strong>Exchange for a different size</strong><span>Swap for the same item in a different size (subject to inventory + supplier confirmation).</span></span>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3 · Which item(s)?</legend>
+      <label>Product name(s) + variant <span class="req">*</span></label>
+      <textarea name="Items to return or exchange" required placeholder="e.g. Reluna Sculptseam Plus Legging Black — Size M &#10;Reluna SmoothHold Top Black — Size S"></textarea>
+      <p class="hint">Copy from your order email. If you're returning multiple, list each on its own line.</p>
+    </fieldset>
+
+    <fieldset id="exchangeBlock" class="hide">
+      <legend>3b · Exchange details</legend>
+      <label>Current size (what you received) <span class="req">*</span></label>
+      <select name="Current size">
+        <option value="">Select current size</option>
+        <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+      </select>
+
+      <label>Desired size (what you'd like) <span class="req">*</span></label>
+      <select name="Desired size">
+        <option value="">Select desired size</option>
+        <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+      </select>
+
+      <label>How does the current size feel? <span class="req">*</span></label>
+      <div class="radio-group">
+        <label class="radio-tile"><input type="radio" name="Size fit issue" value="Too small overall"><span class="rt-text"><strong>Too small</strong><span>Tight everywhere.</span></span></label>
+        <label class="radio-tile"><input type="radio" name="Size fit issue" value="Too large overall"><span class="rt-text"><strong>Too large</strong><span>Loose everywhere.</span></span></label>
+        <label class="radio-tile"><input type="radio" name="Size fit issue" value="Waistband too tight"><span class="rt-text"><strong>Waistband too tight</strong><span>Fine at legs, tight at waist.</span></span></label>
+        <label class="radio-tile"><input type="radio" name="Size fit issue" value="Waistband too loose"><span class="rt-text"><strong>Waistband too loose</strong><span>Fine at legs, loose at waist.</span></span></label>
+        <label class="radio-tile"><input type="radio" name="Size fit issue" value="Length too short"><span class="rt-text"><strong>Length too short</strong></span></label>
+        <label class="radio-tile"><input type="radio" name="Size fit issue" value="Length too long"><span class="rt-text"><strong>Length too long</strong></span></label>
+      </div>
+      <p class="hint">This tells our supplier what to adjust before we ship your exchange.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>4 · Reason</legend>
+      <label>Main reason <span class="req">*</span></label>
+      <select name="Main reason" required onchange="togglePhoto()">
+        <option value="">Select reason</option>
+        <optgroup label="Fit / preference">
+          <option>Doesn't fit — too small</option>
+          <option>Doesn't fit — too large</option>
+          <option>Length wrong</option>
+          <option>Changed my mind</option>
+          <option>Didn't like the style/color in person</option>
+        </optgroup>
+        <optgroup label="Expectation">
+          <option>Fabric feels different than expected</option>
+          <option>Not as described / different from photos</option>
+          <option>Color different from photos</option>
+          <option>Too sheer</option>
+        </optgroup>
+        <optgroup label="Quality / operation">
+          <option data-photo="required">Arrived damaged</option>
+          <option data-photo="required">Defective (seams, stitching, fabric)</option>
+          <option data-photo="required">Wrong item sent</option>
+          <option data-photo="required">Missing item</option>
+        </optgroup>
+      </select>
+
+      <div id="photoBlock" class="hide">
+        <label>Photos <span class="req">*</span></label>
+        <input type="file" name="Photos" accept="image/jpeg,image/png,image/heic" multiple>
+        <p class="hint">Up to 4 photos, 5 MB each. Please include one wide shot + one close-up of the issue.</p>
+      </div>
+      <div id="photoBlockOptional">
+        <label>Photos (optional)</label>
+        <input type="file" name="Photos" accept="image/jpeg,image/png,image/heic" multiple>
+        <p class="hint">Optional for fit/preference. Helps us evaluate faster.</p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>5 · Anything else?</legend>
+      <label>Notes to our team</label>
+      <textarea name="Notes" placeholder="Anything you'd like us to know — arrival date, packaging condition, fit feedback, etc."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>6 · Item condition</legend>
+      <div class="attest">
+        <input type="checkbox" name="Condition attestation" value="I confirm the item is unworn, unwashed, tags attached, in original packaging" required id="attestCheck">
+        <label for="attestCheck">I confirm the item(s) I'm requesting to return/exchange are <strong>unworn, unwashed, with tags attached, in original packaging</strong>. I understand items not meeting these conditions may be denied and shipped back at my expense.</label>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="cta">Submit request</button>
+
+    <p style="text-align:center;font-size:12px;color:#8e8e93;margin-top:14px;">You'll get a confirmation email within a few minutes. Approval decision within 24–48 business hours.</p>
+  </form>
+
+  <div class="policy">
+    <strong>Return policy summary</strong><br>
+    · Return window: 30 days from delivery date.<br>
+    · Items must be unworn, unwashed, with tags attached, in original packaging.<br>
+    · Non-returnable: final sale items, worn items, items with fragrance/smoke/pet hair.<br>
+    · Exchanges depend on inventory + supplier availability (Reluna Sculptseam Plus is made-to-order).<br>
+    · Approved returns: store credit issued instantly (free) or original-payment refund (5–10 business days).<br>
+    · Return shipping is customer-paid unless the item is defective, damaged, or wrongly sent.
+  </div>
+
+  <div class="rule" style="margin-top:24px;"></div>
+  <div class="footer">
+    Paragon Leggings · <a href="https://paragonleggins.com">paragonleggins.com</a><br>
+    Questions? Write to <a href="mailto:paragonleggings@gmail.com">paragonleggings@gmail.com</a>
+  </div>
+</div>
+</div>
+
+<script>
+function toggleReturnExchange() {
+  const val = document.querySelector('input[name="Request type"]:checked')?.value || '';
+  const isExchange = val.startsWith('Exchange');
+  document.getElementById('exchangeBlock').classList.toggle('hide', !isExchange);
+}
+function togglePhoto() {
+  const sel = document.querySelector('select[name="Main reason"]');
+  const opt = sel.options[sel.selectedIndex];
+  const required = opt?.getAttribute('data-photo') === 'required';
+  document.getElementById('photoBlock').classList.toggle('hide', !required);
+  document.getElementById('photoBlockOptional').classList.toggle('hide', required);
+  const fileInput = document.querySelector('#photoBlock input[type=file]');
+  if (fileInput) fileInput.required = required;
+}
+togglePhoto();
+</script>
+</body>
+</html>
